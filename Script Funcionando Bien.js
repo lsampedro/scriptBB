@@ -66,7 +66,8 @@ function hePerdido(){
 // OPERTATIVA
 
 engine.on('GAME_STARTING', function() {
-
+//poner ((userInfo.balance-putBet) < protecBal)
+// Revisar las unidades de Balance y de apuesta
     if (userInfo.balance < protectBal) {
         stop('Script parado por protección de balance. Balance es '+ userInfo.balance);
     }
